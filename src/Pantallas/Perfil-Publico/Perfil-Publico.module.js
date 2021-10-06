@@ -22,12 +22,12 @@ export const styles = StyleSheet.create({
     columnGap: 5,
   },
   titulo: {
-    width: 175,
+    width: "100%",
     flexDirection: "row",
+    justifyContent: "flex-end",
     columnGap: 5,
-    position: "relative",
-    right: -145,
-    top: -10,
+    margin: 10,
+    paddingRight: 10,
     zIndex: 1,
   },
   tituloText: {
@@ -40,10 +40,29 @@ export const styles = StyleSheet.create({
   },
   botones: {
     width: 344,
-    margin: 0,
+    marginTop: 15,
     padding: 0,
     flexDirection: "row",
     justifyContent: "space-between",
     margin: 10,
+  },
+  destacado: {
+    flexDirection: "row",
+    columnGap: 10,
+    alignItems: "flex-start",
+    width: "100%",
+    padding: 10,
+    overflow: "hidden",
+  },
+  actividad: {
+    width: "100%",
+    paddingRight: 10,
+    paddingLeft: 10,
+  },
+  publicacion: {
+    width: "100%",
+    margin:20,
+    paddingRight: 10,
+    paddingLeft: 10,
   },
 });

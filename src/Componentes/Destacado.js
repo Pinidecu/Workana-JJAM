@@ -1,7 +1,5 @@
 import React from "react";
 import { StyleSheet, Text, View, Image } from "react-native";
-import { Icon } from "react-native-elements";
-import { LinearGradient } from "expo-linear-gradient";
 
 export default function Destacado() {
   const datos = {
