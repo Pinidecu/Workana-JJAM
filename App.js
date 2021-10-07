@@ -9,29 +9,52 @@ import PerfilPublico from "./src/Pantallas/Perfil-Publico/Perfil-Publico";
 import { NavigationContainer } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { Icon } from "react-native-elements";
+import {
+  HomeOutlined,
+  VideoCameraOutlined,
+  UserOutlined,
+} from "@ant-design/icons";
 
 const Tab = createBottomTabNavigator();
 
 export default function App() {
   return (
     <NavigationContainer>
-      <Tab.Navigator>
+      <Tab.Navigator
+        screenOptions={{
+          headerShown: false,
+        }}
+      >
         <Tab.Screen
-          name="Perfil Publico"
+          name="Inicio"
           component={() => <PerfilPublico />}
           options={{
-            tabBarIcon: ({ color, size }) => (
-              <Icon name="more-horiz" color="#5B74FB" size={20} />
+            tabBarIcon: () => <HomeOutlined style={{ color: "#5B74FB" }} />,
+          }}
+        />
+        <Tab.Screen
+          name="Salas"
+          component={() => <Publicacion />}
+          options={{
+            tabBarIcon: () => (
+              <VideoCameraOutlined style={{ color: "#5B74FB" }} />
             ),
           }}
         />
         <Tab.Screen
-          name="Publicacion"
+          name="Eventos"
           component={() => <Publicacion />}
           options={{
             tabBarIcon: () => (
-              <Icon name="add" color="#5B74FB" size={20} />
+              <Icon name="online-prediction" color="#5B74FB" size={20} />
             ),
+          }}
+        />
+        <Tab.Screen
+          name="Perfil"
+          component={() => <Publicacion />}
+          options={{
+            tabBarIcon: () => <UserOutlined style={{ color: "#5B74FB" }} />,
           }}
         />
       </Tab.Navigator>

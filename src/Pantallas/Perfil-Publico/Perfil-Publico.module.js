@@ -1,9 +1,28 @@
 import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
+  asd:{
+        backgroundColor: "red",
+        height:1500
+
+  },
   container: {
     flex: 1,
     backgroundColor: "#F9F7FE",
+    alignItems: "center",
+    justifyContent: "center",
+    width: 383,
+    alignSelf: "center",
+  },
+  container1: {
+    backgroundColor: "#F9F7FE",
+    alignItems: "center",
+    justifyContent: "center",
+    width: 383,
+    alignSelf: "center",
+  },
+  container2: {
+    backgroundColor: "#FFF",
     alignItems: "center",
     justifyContent: "center",
     width: 383,
@@ -61,7 +80,7 @@ export const styles = StyleSheet.create({
   },
   publicacion: {
     width: "100%",
-    margin:20,
+    margin: 20,
     paddingRight: 10,
     paddingLeft: 10,
   },

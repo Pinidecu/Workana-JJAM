@@ -91,6 +91,7 @@ const styles = StyleSheet.create({
   },
   iconos: {},
   imagen: {
+    margin: 10,
     width: 316.74,
     height: 158.87,
   },
